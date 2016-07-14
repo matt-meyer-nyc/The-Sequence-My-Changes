@@ -1,0 +1,401 @@
+/*
+############
+## Global ##
+############
+*/
+
+// *{margin:0;padding:0;}
+
+body {
+  background: #f8f8f8;
+  margin: 0;
+  height: 100%;
+  font-family: "Ek Mukta", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  text-align: center; }
+
+footer {
+  background: #333;
+  color:#fff;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end; }
+
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+/*
+############
+## Header ##
+############
+*/
+header {
+  padding: 8px 0 1px;
+  width: 100%; }
+
+header nav {
+  padding: 40px; }
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  align-items: baseline; }
+
+header nav ul li {
+  margin-left: -40px; }
+
+header a {
+  color: #333; }
+
+header a:hover {
+  color: #666; }
+
+/*
+## Logo Style ##
+*/
+header span {
+  display: block;
+  font-weight: 100;
+  line-height: 11px;
+  text-align: center; }
+
+/*
+############
+## Search ##
+############
+*/
+.AddPlaylist input {
+  border: 1px solid #fff;
+  color: #ccc;
+  font-size: 14px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 500px; }
+
+.AddPlaylist input:hover {
+  border: 1px solid #ed677a;
+  color: #666; }
+
+.AddPlaylist button {
+  border: 0 none;
+  padding: 15px 0;
+  width: 532px;
+  background: #ed677a;
+  font-weight: bold;
+  color: #fff; }
+
+.AddPlaylist button:hover {
+  background: #F08594; }
+
+.AddPlaylist > form:nth-child(2) > input:nth-child(1) {
+  width: 230px;
+  margin-bottom: 10px;
+  margin-right: 10px; }
+
+.AddPlaylist > form:nth-child(2) > input:nth-child(2) {
+  width: 230px; }
+
+/*
+################################################
+##           Collection Movie Style           ##
+################################################
+*/
+.collection nav ul,
+.movieList nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -46px; }
+
+.collection nav ul li,
+.movieList nav ul li {
+  margin-bottom: 30px;
+  margin-left: 13.3px; }
+
+.collection nav ul li a,
+.movieList nav ul li a {
+  opacity: 0.7; }
+
+.collection nav ul li a:hover,
+.movieList nav ul li a:hover {
+  opacity: 1; }
+
+.collection nav ul li a section,
+.movieList nav ul li a section {
+  line-height: 2px;
+  margin-top: -10px; }
+
+.collection nav ul li a h3,
+.movieList nav ul li a h3 {
+  font-size: 14px;
+  color: #333; }
+
+.collection nav ul li a p,
+.movieList nav ul li a p {
+  font-size: 12px;
+  color: #777; }
+
+.collection nav ul li a img,
+.movieList nav ul li a img {
+  width: 200px; }
+
+/*
+################################################
+##                 Collection                 ##
+################################################
+*/
+
+/*
+##  Section One: Information  ##
+*/
+.collection > section:nth-child(1) {
+    background-color: #333;
+    color: #fff;}
+
+.collection span {
+    display: block;
+    line-height: 25px;
+    margin: 0 auto;
+    padding: 12% 0;
+    width: 610px;}
+
+.collection span h1 {
+  font-size: 40px; }
+
+.collection span p {
+  font-size: 20px;
+  font-weight: 100;
+ font-style: italic;}
+
+.collection span p:last-child {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;}
+
+/*
+##  Section Two: Collection List  ##
+*/
+.collection > section:nth-child(2) > p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 60px;
+    margin-top: 100px;}
+
+/*
+##  Section Three: Comments  ##
+*/
+.collection > section:nth-child(3) {
+    background-color: #fff;
+    color: #000;
+    padding-bottom: 60px;
+}
+
+.collection > section article {
+  width: 50%;
+  margin: 40px auto 0;}
+
+.collection > section:nth-child(3) form {
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: 1px solid #f2f2f2;
+    border-radius: 6px;
+    padding: 15px;
+}
+.collection > section:nth-child(3) p {
+  padding: 40px 0;
+}
+
+.collection > section:nth-child(3) form label textarea {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  color: #9f9f9f;
+  font-size: 14px;
+  font-family: 'Ek Mukta';
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 20px 15px;
+  resize: none;
+  width: 97.6%;
+}
+
+.collection > section:nth-child(3) form div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.collection > section:nth-child(3) form div button {
+  background: #ed677a none repeat scroll 0 0;
+  border: 0 none;
+  color: #fff;
+  padding: 10px 50px;
+}
+
+.collection > section:nth-child(3) form div button:hover {
+  background: #d55c6d none repeat scroll 0 0;
+}
+
+.collection > section:nth-child(3) article {
+    border-left: 3px solid red;
+    line-height: 8px;
+    padding: 10px 30px;
+    text-align: left;
+    opacity: 0.5;
+}
+
+.collection > section:nth-child(3) article:hover {
+  opacity: 1;
+}
+
+.collection > section:nth-child(3) article a{
+  color:#333;
+  font-size: 14px;
+}
+
+.collection > section:nth-child(3) article p{
+  padding:0px;
+  color:#999;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+/*
+################################################
+##                 Index Page                 ##
+################################################
+*/
+
+.home {margin-top: -67px;}
+.home section:nth-child(1) {
+    background: rgba(0, 0, 0, 0) url("https://media.giphy.com/media/xaMg6NGwH2fFS/giphy.gif") repeat scroll 0 0;
+    height: 500px;
+    opacity: 0.7;
+}
+.home section:nth-child(1) p {
+  color: #000;
+  font-size: 67px;
+  font-weight: 800;
+  line-height: 85px;
+  padding: 11% 16% 9.1%;
+  text-align: center;
+}
+
+.home section:nth-child(2) h2 {
+  color: #333;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-top: 5%;
+}
+.home section:nth-child(2) button {
+    background: #ed677a none repeat scroll 0 0;
+    color: #fff;
+    border: 0 none;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    padding: 15px 100px;
+}
+.home section:nth-child(2) button:hover {
+    background: #d55c6d none repeat scroll 0 0;
+  }
+
+
+  /*
+  ################################################
+  ##                 Search Page                 ##
+  ################################################
+  */
+ .playListInfoContainer {
+
+ }
+
+  .searchInput {
+
+  }
+
+  .searchInput:focus {
+    border: blue;
+  }
+
+  .searchButton {
+
+  }
+
+  .disclaimer {
+    text-transform: none;
+  }
+
+  /*
+  ################################################
+  ##                 Search Page                 ##
+  ################################################
+  */
+  .deleteContainer {
+
+  }
+
+
+/*
+################################################
+##                Media Query                 ##
+################################################
+*/
+@media (min-width: 100px) and (max-width: 767px) {
+  .movieList nav ul {
+    flex-flow: column; }
+
+  .collection span,
+  .container {
+    width: 95%; }
+  .collection nav ul li a img,
+  .movieList nav ul li a img {
+    width: 300px; }
+  .collection nav ul li a,
+  .movieList nav ul li a {
+    opacity: 1; }
+
+  /*
+  ##  CollectionName  ##
+  */
+  .collection nav ul,
+  .movieList nav ul {
+    flex-flow: column nowrap;}
+  .collection > section:nth-child(3) form label textarea {
+    width: 93%;}
+  .collection > section article {
+    width: 90%;}
+
+
+/*
+##  Home  ##
+*/
+.home section:nth-child(1) p {
+  color: #f8f8f8;
+  font-size: 42px;
+  line-height: 55px;
+  padding: 13% 2%;}
+  }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%; }
+  .collection nav ul li a img,
+  .movieList nav ul li a img {
+    width: 300px; } }

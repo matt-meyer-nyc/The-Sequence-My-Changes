@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start-dev": "nodemon",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "heroku": "^0.2.0",
+    "mongodb": "^2.1.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  },
+  "description": ""
+}
